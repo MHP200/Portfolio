@@ -2,6 +2,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    background-color: hsl(244, 20%, 73%); /* Update with your desired background color */
+
   }
   
   header {
@@ -13,11 +15,11 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding:0px;
   }
   
   .logo img {
-    height: 50px;
+    height: 2px;
   }
   
   nav ul {
@@ -26,7 +28,8 @@ body {
   }
   
   nav ul li {
-    margin-left: 20px;
+    margin-left: 10px;
+    margin-right: 30px;
   }
   
   nav ul li a {
@@ -35,22 +38,45 @@ body {
   }
   
   main {
+    display: flex;
+    flex-wrap: wrap;
     padding: 20px;
   }
   
+  .intro {
+    display: flex;
+    align-items: center;
+  }
+  
   .intro img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
+    width: 50000px;
+    height: 30000000px;
+    border-radius: 5000%;
+    margin-right: 20px;
+  }
+  
+  .intro-text {
+    flex: 1;
   }
   
   .intro h1 {
-    font-size: 24px;
-    margin-top: 10px;
+    font-size: 20px;
+    margin-top: -400px; /* Adjust the value as needed */
+    margin-left: 200px; /* Add margin to the left side */
+
+    white-space: nowrap;
+
   }
   
   .intro p {
-    font-size: 16px;
+    font-size: 20px;
+    margin-top: 100px; /* Adjust the value as needed */
     color: #666;
+  
+  }
+  
+  section {
+    flex-basis: 333.33%;
+    max-width: 33.33%;
   }
   
