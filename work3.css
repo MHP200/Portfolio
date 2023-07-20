@@ -42,3 +42,21 @@ body {
 
   }
   
+  a.figma-link {
+
+    background-color: #ff6600; /* Choose a background color that complements your website's design */
+    color: #fff; /* Set the text color to be readable on the background */
+    padding: 10px 20px; /* Add padding to create a clickable area */
+    border-radius: 5px; /* Add rounded corners for a button-like appearance */
+    text-decoration: underline; /* Remove default underline */
+  }
+  
+  a.figma-link:hover {
+    background-color: #ff9933; /* Change the background color on hover */
+  }
+  /* Assuming you have a class "center-container" wrapping the paragraph */
+.center-container {
+  text-align: center;
+  font-size: 20px; /* Adjust the font size as needed */
+
+}
