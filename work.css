@@ -1,92 +1,92 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color:  #FFE4B4
-  }
-  
-  header {
-    background-color: #2c3e50;
-    color: #fff;
-  }
-  
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding:0px;
-  }
-  
-  .logo img {
-    height: 2px;
-    border-radius: 10%; /* Makes the edges round */
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color:  #FFE4B4
+}
 
-  }
-  
-  nav ul {
-    list-style-type: none;
-    display: flex;
-  }
-  
-  nav ul li {
-    margin-left: 10px;
-    margin-right: 30px;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: #fff;
-  }
-  #work {
-    text-align: center;
-  }
-  
-  #work p {
-    font-size: 30px;
-    font-family: "Lato"; 
-  }
-  
+header {
+  background-color: #2c3e50;
+  color: #fff;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:0px;
+}
+
+.logo img {
+  height: 2px;
+  border-radius: 10%; /* Makes the edges round */
+
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 10px;
+  margin-right: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+#work {
+  text-align: center;
+}
+
+#work p {
+  font-size: 30px;
+  font-family: "Lato"; 
+}
+
 .work-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .work-item {
-    flex-basis: calc(50% - 20px);
-    margin: 10px;
-  }
-  
-  .image1 {
-    width: 550px;
-    height: auto;
-  }
-  
-  .image2 {
-    width: 570px;
-    height: 300px;
-  }
-  
-  .image3 {
-    width: 250px;
-    height: auto;
-  }
-  
-  .image4 {
-    width: 350px;
-    height: auto;
-  }
-  
-  
-  .work-item:hover img {
-    transform: scale(1.1);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  }
-  .red-text {
-    color: red;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
 
-  .bule-text {
-    color: rgb(60, 185, 231); 
+.work-item {
+  flex-basis: calc(50% - 20px);
+  margin: 10px;
+}
+
+.image1 {
+  width: 550px;
+  height: auto;
+}
+
+.image2 {
+  width: 570px;
+  height: 300px;
+}
+
+.image3 {
+  width: 250px;
+  height: auto;
+}
+
+.image4 {
+  width: 350px;
+  height: auto;
+}
+
+
+.work-item:hover img {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.red-text {
+  color: red;
+}
+
+.bule-text {
+  color: rgb(60, 185, 231); 
 }
