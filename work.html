@@ -32,7 +32,15 @@
 
     <main>
       <section id="work">
-        <p>My User-Centered Design Showcase</p>
+        <div class="message">
+          <p>Hello, I'm Mahdi,</p>
+          <p>
+            I'm passionate about
+            <span id="changingText" style="color: rgb(3, 215, 253)"></span>
+            Design
+          </p>
+          <p>These are my User-Centered Design Showcase</p>
+        </div>
         <div class="work-row">
           <div class="work-item">
             <a href="work1.html">
@@ -46,12 +54,10 @@
               <img
                 src="https://i0.wp.com/kamloopshikingclub.net/wp-content/uploads/2021/06/Hiker.gif?fit=540%2C540&ssl=1"
                 alt="Work Image 2"
-                class="image2"
-              />
-              <h1 class="app-name">
-                Travel<span class="bule-text">Partner</span>
-              </h1>
-            </a>
+                class="image2" />
+              <p>Travel<span class="bule-text">Partner</span></p>
+              <p></p
+            ></a>
           </div>
         </div>
         <div class="work-row">
@@ -74,5 +80,41 @@
         </div>
       </section>
     </main>
+    <script>
+      const phrases = ["UX", "Product", "Visual "];
+      const changingTextElement = document.getElementById("changingText");
+
+      let currentPhraseIndex = 0;
+      let currentCharIndex = 0;
+      let isDeleting = false;
+
+      function changeText() {
+        const currentPhrase = phrases[currentPhraseIndex];
+        let textToShow;
+
+        if (isDeleting) {
+          textToShow = currentPhrase.slice(0, currentCharIndex);
+          currentCharIndex--;
+
+          if (currentCharIndex < 0) {
+            isDeleting = false;
+            currentPhraseIndex = (currentPhraseIndex + 1) % phrases.length;
+            currentCharIndex = 0;
+          }
+        } else {
+          textToShow = currentPhrase.slice(0, currentCharIndex + 1);
+          currentCharIndex++;
+
+          if (currentCharIndex > currentPhrase.length) {
+            isDeleting = true;
+            currentCharIndex = currentPhrase.length - 1;
+          }
+        }
+
+        changingTextElement.textContent = textToShow;
+      }
+
+      setInterval(changeText, 200);
+    </script>
   </body>
 </html>

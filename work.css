@@ -1,8 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
-  background-color:  #FFE4B4
 }
 
 header {
@@ -43,7 +41,6 @@ nav ul li a {
 
 #work p {
   font-size: 30px;
-  font-family: "Lato"; 
 }
 
 .work-row {
@@ -89,4 +86,22 @@ nav ul li a {
 
 .bule-text {
   color: rgb(60, 185, 231); 
+}
+/* Adding styles to set font color to black and remove underlines for project topic names */
+.work-item a {
+  text-decoration: none;
+}
+
+.work-item a h1.app-name {
+  color: black;
+  text-decoration: none;
+}
+
+.work-item a p {
+  color: black;
+  text-decoration: none;
+}
+
+.work-item a p .bule-text {
+  text-decoration: none;
 }
