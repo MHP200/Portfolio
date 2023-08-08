@@ -46,3 +46,22 @@ body {
 .red-text {
     color: rgb(60, 185, 231); 
 }
+.cool-link {
+  display: inline-block;
+  background-color: #007BFF;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.cool-link:hover {
+  background-color: #0099FF;
+  text-decoration: none;
+}
+.center-container {
+  text-align: center;
+  font-size: 20px; /* Adjust the font size as needed */
+
+}
