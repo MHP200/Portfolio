@@ -65,3 +65,15 @@ body {
   font-size: 20px; /* Adjust the font size as needed */
 
 }
+/* Add this to your existing CSS */
+.top-image {
+  text-align: center;
+  margin-top: 20px; /* Adjust the margin as needed */
+}
+
+.top-image img {
+  max-width: 100%;
+  height: auto; /* This will maintain the original aspect ratio of the GIF */
+  border-radius: 10px;
+  /* Add any other styling you want */
+}
