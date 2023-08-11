@@ -97,3 +97,33 @@ body {
     }
   }
   
+  .resume {
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 2rem;
+  }
+  
+  .resume h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  .resume p {
+    margin: 0;
+    font-size: 1rem;
+  }
+  
+  .resume-link {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #2980b9;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .resume-link:hover {
+    background-color: #2471a3;
+  }
