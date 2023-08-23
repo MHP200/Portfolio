@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>My UX/UI Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="home.css" />
+    <link rel="stylesheet" type="text/css" href="work.css" />
   </head>
   <body>
     <header>
@@ -23,65 +23,106 @@
           />
         </div>
         <ul>
-          <li><a href="#index.html">Home</a></li>
-          <li><a href="work.html">Work</a></li>
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="#work.html">Work</a></li>
           <li><a href="Blog.html">About Me</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section id="home">
-        <div class="intro">
-          <div class="intro-content">
-            <h1>Welcome to my UX/UI Portfolio</h1>
-            <p class="right-align">
-              Hello👋 I'm Mahdi, a UX designer graduating with a bachelor's
-              degree in computer science from San Francisco State University,
-              blending creativity with technical expertise to create seamless
-              user experiences.
-            </p>
-            <div class="social-links">
-              <a
-                href="https://www.linkedin.com/in/mahdi-hasanpour/"
-                target="_blank"
-              >
-                <img
-                  src="https://e7.pngegg.com/pngimages/342/689/png-clipart-linkedin-logo-icon-others-blue-text-thumbnail.png"
-                  alt="LinkedIn"
-                  width="30"
-                  height="30"
-                />
-                <span>Mahdi Hassanpour</span>
-              </a>
-
-              <a href="https://github.com/MHP200" target="_blank">
-                <img
-                  src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
-                  alt="GitHub"
-                  width="30"
-                  height="30"
-                />
-                <span>MHP200</span>
-              </a>
-              <a href="mailto:mahdi.hasanpour@icloud.com" class="email-link">
-                <img
-                  src="https://cdn-icons-png.flaticon.com/512/7544/7544411.png"
-                  alt="Email"
-                  width="30"
-                  height="30"
-                />
-                <span>Mahdi.hasanpour@icloud.com</span>
-              </a>
-            </div>
+      <section id="work">
+        <div class="message">
+          <p>Hello, I'm Mahdi,</p>
+          <p>
+            I'm passionate about
+            <span id="changingText" style="color: rgb(3, 215, 253)"></span>
+            Design
+          </p>
+          <p>These are my User-Centered Design Showcase</p>
+        </div>
+        <div class="work-row">
+          <div class="work-item">
+            <a href="Robot_Project/Robot.html">
+              <img
+                src="https://media.tenor.com/KC4UKhZQu1IAAAAC/barneybar-nccr.gif"
+                alt="Work Image 1"
+                class="image1"
+              />
+              <p>Project 1</p>
+            </a>
           </div>
-          <img
-            src="Screenshot 2023-07-18 234459.png"
-            alt="Your Picture"
-            class="intro-image"
-          />
+
+          <div class="work-item">
+            <a href="Traveling.html">
+              <img
+                src="https://i0.wp.com/kamloopshikingclub.net/wp-content/uploads/2021/06/Hiker.gif?fit=540%2C540&ssl=1"
+                alt="Work Image 2"
+                class="image2" />
+              <p>Travel<span class="bule-text">Partner</span></p>
+              <p></p
+            ></a>
+          </div>
+        </div>
+        <div class="work-row">
+          <div class="work-item">
+            <a href="work3.html">
+              <img
+                src="https://img.apmcdn.org/f9e79dd50f3a400a7af917a29e2b1243712010ec/uncropped/a9c47a-20190402-fire-house04.gif"
+                alt="Work Image 3"
+                class="image1"
+              />
+              <p>Rebuild<span class="red-text">From</span>Ashes</p>
+            </a>
+          </div>
+          <div class="work-item">
+            <a href="Construction/Construction.html">
+              <img
+                src="https://giffiles.alphacoders.com/158/158676.gif"
+                alt="Work Image 4"
+                class="image4"
+              />
+              <p>Project 4</p>
+            </a>
+          </div>
         </div>
       </section>
     </main>
+    <script>
+      const phrases = ["UX", "Product", "Visual", "UI", "Interaction"];
+      const changingTextElement = document.getElementById("changingText");
+
+      let currentPhraseIndex = 0;
+      let currentCharIndex = 0;
+      let isDeleting = false;
+
+      function changeText() {
+        const currentPhrase = phrases[currentPhraseIndex];
+        let textToShow;
+
+        if (isDeleting) {
+          textToShow = currentPhrase.slice(0, currentCharIndex);
+          currentCharIndex--;
+
+          if (currentCharIndex < 0) {
+            isDeleting = false;
+            currentPhraseIndex = (currentPhraseIndex + 1) % phrases.length;
+            currentCharIndex = 0;
+          }
+        } else {
+          textToShow = currentPhrase.slice(0, currentCharIndex + 1);
+          currentCharIndex++;
+
+          if (currentCharIndex > currentPhrase.length) {
+            isDeleting = true;
+            currentCharIndex = currentPhrase.length - 1;
+          }
+        }
+
+        changingTextElement.textContent = textToShow;
+      }
+
+      setInterval(changeText, 200);
+    </script>
   </body>
 </html>
