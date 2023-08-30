@@ -52,6 +52,35 @@ body {
     text-decoration: none;
     color: #fff;
   }
+  /* styling for the first box, introducing me  */
+  .about {
+    display: flex;
+    align-items: center;
+  }
+  
+  .about-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  
+  
+  .about p {
+    margin-top: 10px;
+  }
+  
+  .about-image {
+    flex: 1;
+    text-align: right;
+    padding: 100px;
+  }
+  
+  .about-image img {
+    width: 400px; /* Set the width of the square image */
+    height: auto;
+    border-radius: 0%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
   
   /* General section styles for all pages */
   section {
@@ -97,6 +126,24 @@ body {
     }
   }
   
+/* Styling for social links */
+.social-links {
+  margin-top: 20px;
+}
+
+.social-links a {
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.social-links img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+
   .resume {
     text-align: center;
     background-color: #f9f9f9;
@@ -127,3 +174,6 @@ body {
   .resume-link:hover {
     background-color: #2471a3;
   }
+
+  
+  
