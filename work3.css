@@ -53,7 +53,7 @@ body {
   
   a.figma-link {
 
-    background-color: #ff6600; /* Choose a background color that complements your website's design */
+    background-color: #007BFF;
     color: #fff; /* Set the text color to be readable on the background */
     padding: 10px 20px; /* Add padding to create a clickable area */
     border-radius: 5px; /* Add rounded corners for a button-like appearance */
@@ -61,7 +61,7 @@ body {
   }
   
   a.figma-link:hover {
-    background-color: #ff9933; /* Change the background color on hover */
+    background-color: #0099FF;
   }
   /* Assuming you have a class "center-container" wrapping the paragraph */
 .center-container {
