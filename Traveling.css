@@ -49,15 +49,60 @@ body {
 }
 
 
-.container {
-  background-color: #ffd3b569;
-  padding: 20px;
+/* context section*/
+
+.section-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 10px;
   margin: 20px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
+.context {
+  flex: 1;
+  display: flex;
+  flex-direction: column; /* Change flex direction to column */
+  justify-content: flex-end; /* Align content to the bottom */
+  padding-right: 20px;
+  padding-bottom: 20px; /* Add padding to the bottom */
+}
 
+.context h2 {
+  margin-right: 10px;
+  margin-bottom: 10px; /* Add margin at the bottom of the heading */
+}
 
+.info-column {
+  padding-right: 100px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.info-item {
+  margin-bottom: 10px;
+}
+
+.context p {
+  line-height: 1.5; /* Adjust the line height to your preference */
+  margin-bottom: 10px; /* Add a little margin at the bottom of each paragraph */
+}
+
+.container {
+  background-color: white;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  
+}
+
+.paragraph {
+  line-height: 1.5; /* Adjust the line height to your preference */
+  margin-bottom: 10px; /* Add a little margin at the bottom of each paragraph */
+  }
+  
 .red-text {
     color: rgb(60, 185, 231); 
 }
@@ -100,4 +145,16 @@ body {
   height: auto;
   border-radius: 10px;
 }
+
+
+/*TIMPACT & RESULTS*/
+.result-list li {
+  margin-bottom: 10px; /* Adjust the value to control the spacing between each line */
+}
+
+
+.experience-paragraph {
+  margin-bottom: 20px; /* Adjust the value to control the spacing between paragraphs */
+}
+
 
