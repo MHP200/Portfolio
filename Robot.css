@@ -98,14 +98,23 @@ body {
 .context {
   flex: 1;
   display: flex;
-  align-items: center;
+  flex-direction: column; /* Change flex direction to column */
+  justify-content: flex-end; /* Align content to the bottom */
   padding-right: 20px;
+  padding-bottom: 20px; /* Add padding to the bottom */
 }
+
+
 
 .context h2 {
   margin-right: 10px;
+  margin-bottom: 10px; /* Add margin at the bottom of the heading */
 }
 
+.context p {
+  line-height: 1.5; /* Adjust the line height to your preference */
+  margin-bottom: 10px; /* Add a little margin at the bottom of each paragraph */
+}
 .info-column {
   flex: 1;
   display: flex;

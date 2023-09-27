@@ -128,3 +128,19 @@ flex-direction: column;
 .info-item {
 margin-bottom: 10px;
 }
+
+.link-container {
+  padding: 15px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.link-container a {
+  color: #007BFF;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.link-container a:hover {
+  color: #0056b3;
+}
