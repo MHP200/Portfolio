@@ -124,3 +124,12 @@ body {
 .info-item {
   margin-bottom: 10px;
 }
+
+.figma-link {
+  color: #007BFF; /* Set the link color */
+  text-decoration: none; /* Remove the default underline */
+}
+
+.figma-link:hover {
+  color: #0056b3; /* Change the link color on hover */
+}
